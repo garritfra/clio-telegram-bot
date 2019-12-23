@@ -1,5 +1,7 @@
 const Telegraf = require("telegraf");
 
+require("dotenv").config();
+
 const bot = new Telegraf(process.env.BOT_TOKEN);
 const issueRegex = /#\d+/;
 const commitRegex = /\b[0-9a-f]{5,40}\b/;
