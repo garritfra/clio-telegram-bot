@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "build": "mkdir -p 'public' && cp index.js public/index.js",
+    "start": "npm run build && node public/index.js"
   },
   "keywords": [],
   "author": "",
